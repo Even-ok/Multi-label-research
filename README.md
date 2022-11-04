@@ -1,65 +1,98 @@
-## README
+# <center>Multi-label Research</center>
 
 
 
-### 综述
+## Category
 
-##### 1.  A Review On Multi-Label Learning Algorithms :ok_hand:
+1. 按文章目标（mainly based on *The Emerging Trends of Multi-Label Learning*）
 
-（更多地关注于机器学习方法）
+- **综述类**
 
-##### 2.  The Emerging Trends of Multi-Label Learning :ok_hand:
-
-（更多地关注于深度学习方法）
-
-
-
-### XMLC（Extreme multi-label learning）
+| Title                                       | Description                                                  | State              | Repository |
+| ------------------------------------------- | ------------------------------------------------------------ | ------------------ | ---------- |
+| A Review On Multi-Label Learning Algorithms | 周志华老师的，更多地关注于机器学习方法，8种常见模型          | :heavy_check_mark: | None       |
+| The Emerging Trends of Multi-Label Learning | Anchor，<img src="assets/image-20221104210000301.png" alt="image-20221104210000301" style="zoom:50%;" /> | :heavy_check_mark: | None       |
+|                                             |                                                              |                    |            |
 
 
 
+- **XMLC(Extreme multi-label learning)**
+
+  :star:   one vs all.    
+
+  传统的就是针对每一个标签训练一个分类器，削弱了每个标签之间的关联性。
+
+  可推荐阅读：
+
+| Title                                                        | Description | State | Repository |
+| ------------------------------------------------------------ | ----------- | ----- | ---------- |
+| DiSMEC - Distributed Sparse Machines for Extreme Multi-label Classification |             | :x:   | None       |
+
+​		:star:  Tree
+
+| Title                                                        | Description | State | Repository |
+| ------------------------------------------------------------ | ----------- | ----- | ---------- |
+| Extreme F-measure maximization using sparse probability estimates |             | ❌     | None       |
+| A no-regret generalization of hierarchical softmax to extreme multi-label classification |             | ❌     | None       |
+| Fastxml: a fast, accurate and stable tree-classifier for extreme multi-label learning | classic     | ❌     | None       |
+
+​		:star:  Embedding
+
+|                                                        Title | Description                              | State           | Repository                               |
+| -----------------------------------------------------------: | ---------------------------------------- | --------------- | ---------------------------------------- |
+| Sparse local embeddings for extreme multi-label classification | SLEEC，经典方法！                        | ❌               | None                                     |
+| Partial Multi-Label Learning by Low-Rank and Sparse Decomposition. |                                          | ❌               | None                                     |
+| Query2Label: A Simple Transformer Way to Multi-Label Classification | Transformer的decoding学习label embedding | :bookmark_tabs: | https://github.com/SlongLiu/query2labels |
+
+
+
+- **PML（Partial multi-label learning）**
+
+|                                                       Title | Description | State | Repository |
+| ----------------------------------------------------------: | ----------- | ----- | ---------- |
+|                                Partial Multi-Label Learning | classic     | ❌     | None       |
+|        Partial Multi-Label Learning with Label Distribution |             | ❌     | None       |
+| Partial Multi-Label Learning via Credible Label Elicitation |             | ❌     | None       |
+|                                                             |             |       |            |
+
+
+
+- **SSMLC（semi-supervised MLC）**
 
 
 
 
-### PML（Partial multi-label learning）
 
-##### 1. Partial Multi-Label Learning :x:
+- **MLML（Multi-label learning with missing label）**
 
-
-
-
-
-
-
-### SSMLC（semi-supervised MLC）
+|                                                        Title | Description                                                  | State              | Repository                                                   |
+| -----------------------------------------------------------: | ------------------------------------------------------------ | ------------------ | ------------------------------------------------------------ |
+|               Asymmetric Loss For Multi-Label Classification | classic，改loss function，提出ASL，对正负标签施加不同的focal weight | :heavy_check_mark: | [Alibaba-MIIL/ASL: Official Pytorch Implementation of: "Asymmetric Loss For Multi-Label Classification"(ICCV, 2021) paper (github.com)](https://github.com/Alibaba-MIIL/ASL) |
+| Simple and Robust Loss Design for Multi-Label Learning with Missing Labels | 改loss function，加了Hill Loss, SPLC和focal margin           | :heavy_check_mark: | [xinyu1205/robust-loss-mlml (github.com)](https://github.com/xinyu1205/robust-loss-mlml) |
+| Learning a Deep ConvNet for Multi-label Classification with Partial Labels |                                                              | ❌                  | None                                                         |
 
 
 
-### MLML（Multi-label learning with missing label）
+2. 按多标签分类中标签数量分类
 
-##### 1. Asymmetric Loss For Multi-Label Classification :ok_hand:
+- **single label**
 
-（改loss function）
-
-[Alibaba-MIIL/ASL: Official Pytorch Implementation of: "Asymmetric Loss For Multi-Label Classification"(ICCV, 2021) paper (github.com)](https://github.com/Alibaba-MIIL/ASL)
-
-
-
-##### 2. Learning a Deep ConvNet for Multi-label Classification with Partial Labels :x:
+|                                            Title | Description     | State              | Repository |
+| -----------------------------------------------: | --------------- | ------------------ | ---------- |
+| Multi-Label Learning from Single Positive Labels | 改loss function | :heavy_check_mark: |            |
 
 
 
-##### 3. Simple and Robust Loss Design for Multi-Label Learning with Missing Labels :ok_hand:
-
-（改loss function）
-
-[xinyu1205/robust-loss-mlml (github.com)](https://github.com/xinyu1205/robust-loss-mlml)
 
 
+3. 按文章的改进方向
 
-### Single Label
+- improve loss function
 
-##### 1. Multi-Label Learning from Single Positive Labels
 
-（改loss function）
+
+- model label correlation
+
+
+
+- change model structure
