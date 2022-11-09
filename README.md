@@ -38,11 +38,11 @@
 
 ​		:star:  Embedding
 
-|                                                        Title | Description                              | State           | Repository                               |
-| -----------------------------------------------------------: | ---------------------------------------- | --------------- | ---------------------------------------- |
-| Sparse local embeddings for extreme multi-label classification | SLEEC，经典方法！                        | ❌               | None                                     |
-| Partial Multi-Label Learning by Low-Rank and Sparse Decomposition. |                                          | ❌               | None                                     |
-| Query2Label: A Simple Transformer Way to Multi-Label Classification | Transformer的decoding学习label embedding | :bookmark_tabs: | https://github.com/SlongLiu/query2labels |
+|                                                        Title | Description                                                  | State              | Repository                               |
+| -----------------------------------------------------------: | ------------------------------------------------------------ | ------------------ | ---------------------------------------- |
+| Sparse local embeddings for extreme multi-label classification | SLEEC，经典方法！                                            | ❌                  | None                                     |
+| Partial Multi-Label Learning by Low-Rank and Sparse Decomposition. |                                                              | ❌                  | None                                     |
+| Query2Label: A Simple Transformer Way to Multi-Label Classification | Transformer的decoder学习label embedding，思路其实很简单，用一个Embedding层把它和backbone输出的channel数相match即可，backbone输出[2048,14,14]的feature map，2048是channel, 也是embedding，所以label的embedding大小也是2048。 | :heavy_check_mark: | https://github.com/SlongLiu/query2labels |
 
 
 
@@ -85,11 +85,18 @@
 
 
 
-3. 按文章的改进方向
+3. 按文章的改进方向 
 
-- improve loss function
+- **improve loss function**
 
+(注：标*的代表上面已有相同的item)
 
+|                                                        Title | Description                                                  | State              | Repository |
+| -----------------------------------------------------------: | ------------------------------------------------------------ | ------------------ | ---------- |
+|            *Multi-Label Learning from Single Positive Labels | 改loss function                                              | ✔️                  |            |
+| *Simple and Robust Loss Design for Multi-Label Learning with Missing Labels | 改loss function，加了Hill Loss, SPLC和focal margin           | :heavy_check_mark: |            |
+|              *Asymmetric Loss For Multi-Label Classification | classic，改loss function，提出ASL，对正负标签施加不同的focal weight | :heavy_check_mark: |            |
+|                                                              |                                                              |                    |            |
 
 - model label correlation
 
