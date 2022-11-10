@@ -27,6 +27,7 @@
 | Title                                                        | Description | State | Repository |
 | ------------------------------------------------------------ | ----------- | ----- | ---------- |
 | DiSMEC - Distributed Sparse Machines for Extreme Multi-label Classification |             | :x:   | None       |
+| Deep Extreme Multi-label Learning                            |             | :x:   |            |
 
 ​		:star:  Tree
 
@@ -69,7 +70,7 @@
 | -----------------------------------------------------------: | ------------------------------------------------------------ | ------------------ | ------------------------------------------------------------ |
 |               Asymmetric Loss For Multi-Label Classification | classic，改loss function，提出ASL，对正负标签施加不同的focal weight | :heavy_check_mark: | [Alibaba-MIIL/ASL: Official Pytorch Implementation of: "Asymmetric Loss For Multi-Label Classification"(ICCV, 2021) paper (github.com)](https://github.com/Alibaba-MIIL/ASL) |
 | Simple and Robust Loss Design for Multi-Label Learning with Missing Labels | 改loss function，加了Hill Loss, SPLC和focal margin           | :heavy_check_mark: | [xinyu1205/robust-loss-mlml (github.com)](https://github.com/xinyu1205/robust-loss-mlml) |
-| Learning a Deep ConvNet for Multi-label Classification with Partial Labels |                                                              | ❌                  | None                                                         |
+| Learning a Deep ConvNet for Multi-label Classification with Partial Labels | 多篇文章提到！                                               | ❌                  | None                                                         |
 
 
 
@@ -77,9 +78,10 @@
 
 - **single label**
 
-|                                            Title | Description     | State              | Repository |
-| -----------------------------------------------: | --------------- | ------------------ | ---------- |
-| Multi-Label Learning from Single Positive Labels | 改loss function | :heavy_check_mark: |            |
+|                                                        Title | Description     | State              | Repository |
+| -----------------------------------------------------------: | --------------- | ------------------ | ---------- |
+|             Multi-Label Learning from Single Positive Labels | 改loss function | :heavy_check_mark: |            |
+| Acknowledging the Unknown for Multi-label Learning with Single Positive Labels |                 | :x:                |            |
 
 
 
@@ -98,8 +100,31 @@
 |              *Asymmetric Loss For Multi-Label Classification | classic，改loss function，提出ASL，对正负标签施加不同的focal weight | :heavy_check_mark: |            |
 |                                                              |                                                              |                    |            |
 
-- model label correlation
+- model label correlation ( graph network )
+
+|                                                        Title | Description | State | Repository |
+| -----------------------------------------------------------: | ----------- | ----- | ---------- |
+| Multi-Label Image Recognition with Joint Class-Aware Map Disentangling and Label Correlation Embedding |             | ❌     |            |
+| Multi-Label Image Recognition With Graph Convolutional Networks |             | ❌     |            |
+
+- change model structure( backbone| head )
+
+|                                                        Title | Description                                                  | State              | Repository                                 |
+| -----------------------------------------------------------: | ------------------------------------------------------------ | ------------------ | ------------------------------------------ |
+|         TResNet: High Performance GPU-Dedicated Architecture | 改loss function                                              | ❌                  |                                            |
+| *Query2Label: A Simple Transformer Way to Multi-Label Classification | attention-based head，主要使用的是Transformer 的decoder部分，学习的是label embedding | :heavy_check_mark: |                                            |
+|       ML-Decoder: Scalable and Versatile Classification Head |                                                              | :open_book:        | https://github.com/Alibaba-MIIL/ML_Decoder |
 
 
 
-- change model structure
+
+
+------
+
+
+
+### OOD:
+
+感觉和zero-shot learning 有点关系，因为zero-shot是从已知类中学习，预测未知类。
+
+> This is usually done by sharing knowledge between the seen classes (that were used for training) and the unseen classes via a text model.
