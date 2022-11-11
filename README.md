@@ -24,10 +24,11 @@
 
   可推荐阅读：
 
-| Title                                                        | Description | State | Repository |
-| ------------------------------------------------------------ | ----------- | ----- | ---------- |
-| DiSMEC - Distributed Sparse Machines for Extreme Multi-label Classification |             | :x:   | None       |
-| Deep Extreme Multi-label Learning                            |             | :x:   |            |
+| Title                                                        | Description                      | State | Repository |
+| ------------------------------------------------------------ | -------------------------------- | ----- | ---------- |
+| DiSMEC - Distributed Sparse Machines for Extreme Multi-label Classification |                                  | :x:   | None       |
+| Deep Extreme Multi-label Learning                            |                                  | :x:   |            |
+| *ML-Decoder: Scalable and Versatile Classification Head      | 可以面向特别多标签的情况进行处理 |       |            |
 
 ​		:star:  Tree
 
