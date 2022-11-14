@@ -17,4 +17,12 @@
 
 - 删除了self-attention层，作者认为它是冗余的，因为这个projection layer可以转换输入的query成任何output. self-attention会增加计算的复杂度，cost和class成线性关系
 - group- decoding: 为了去除classes和分类cost之间的耦合线性关系，设置了一个fixed number K，和类别个数是无关的。通俗来说，就是一维 MLP 出来的向量可以映射到多个logits，通过不同的projection layer. 
-- 
+
+![image-20221114200650289](assets/image-20221114200650289.png)
+
+- Non-learnable queries: 这是相对Q2L来说的，文中说把这个可学习的embedding改成可学习的transformation( 可能是线性模型投影？ )
+
+4. **为什么ML-Decoder可以用于zero-shot?** 
+
+- transformer中的attention公式有dot-product的特性，NLP的语义向量也有点积相似的语义性。
+- shared projection matrix 对输入数据的顺序是不敏感的，输入类别的个数是多少也不敏感。
