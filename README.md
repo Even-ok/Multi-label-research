@@ -114,7 +114,7 @@
 | -----------------------------------------------------------: | ------------------------------------------------------------ | ------------------ | ------------------------------------------ |
 |         TResNet: High Performance GPU-Dedicated Architecture | 改loss function                                              | ❌                  |                                            |
 | *Query2Label: A Simple Transformer Way to Multi-Label Classification | attention-based head，主要使用的是Transformer 的decoder部分，学习的是label embedding | :heavy_check_mark: |                                            |
-|       ML-Decoder: Scalable and Versatile Classification Head |                                                              | :open_book:        | https://github.com/Alibaba-MIIL/ML_Decoder |
+|       ML-Decoder: Scalable and Versatile Classification Head |                                                              | :heavy_check_mark: | https://github.com/Alibaba-MIIL/ML_Decoder |
 
 
 
